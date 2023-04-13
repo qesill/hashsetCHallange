@@ -24,8 +24,7 @@ public class Main {
 
 Iterator <String> iterator = set.iterator();
 while (iterator.hasNext()) {
-    String person = iterator.next();
-    System.out.println(person);
+    System.out.println(iterator.next());
         }
 
 HashSet<Car> cars = new HashSet<>();
@@ -33,12 +32,21 @@ cars.add(new Car("Porshe"));
 cars.add(new Car("Ford"));
 cars.add(new Car("Pontiac"));
 cars.add(new Car("Porshe"));
+Car car1 = new Car("Dodge");
+cars.add(car1);
+cars.add(car1);
+Car car2 = new Car("Citroen");
+cars.add(car2);
+cars.add(car2);
+Car car3 = new Car("Opel");
+cars.add(car3);
+cars.add(car3);
 
         System.out.println("\nSamochody:");
 Iterator<Car> carIterator = cars.iterator();
 while (carIterator.hasNext()) {
     Car car = carIterator.next();
-    System.out.println(car);
+    System.out.println(car.getName());
 }
     }
 }
